@@ -1,0 +1,102 @@
+\documentclass[onecolumn, draftclsnofoot,10pt, compsoc]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{setspace}
+
+\usepackage{geometry}
+\geometry{textheight=9.5in, textwidth=7in}
+
+% 1. Fill in these details
+\def \CapstoneTeamName{		Project BoxSand}
+\def \CapstoneTeamNumber{		6}
+\def \GroupMemberOne{			Max Moulds}
+\def \GroupMemberTwo{			Sam Morey}
+\def \GroupMemberThree{			Anya Lehman}
+\def \CapstoneProjectName{		Project BoxSand}
+\def \CapstoneSponsorCompany{	Oregon State Physics Department}
+\def \CapstoneSponsorPerson{		Dr. Kenneth Walsh}
+
+% 2. Uncomment the appropriate line below so that the document type works
+\def \DocType{		Problem Statement
+				%Requirements Document
+				%Technology Review
+				%Design Document
+				%Progress Report
+				}
+			
+\newcommand{\NameSigPair}[1]{\par
+\makebox[2.75in][r]{#1} \hfil 	\makebox[3.25in]{\makebox[2.25in]{\hrulefill} \hfill		\makebox[.75in]{\hrulefill}}
+\par\vspace{-12pt} \textit{\tiny\noindent
+\makebox[2.75in]{} \hfil		\makebox[3.25in]{\makebox[2.25in][r]{Signature} \hfill	\makebox[.75in][r]{Date}}}}
+% 3. If the document is not to be signed, uncomment the RENEWcommand below
+%\renewcommand{\NameSigPair}[1]{#1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{titlepage}
+    \pagenumbering{gobble}
+    \begin{singlespace}
+        \hfill 
+        % 4. If you have a logo, use this includegraphics command to put it on the coversheet.
+        %\includegraphics[height=4cm]{CompanyLogo}   
+        \par\vspace{.2in}
+        \centering
+        \scshape{
+            \huge CS Capstone \DocType \par
+            {\large\today}\par
+            \vspace{.5in}
+            \textbf{\Huge\CapstoneProjectName}\par
+            \vfill
+            {\large Prepared for}\par
+            \Huge \CapstoneSponsorCompany\par
+            \vspace{5pt}
+            {\Large\NameSigPair{\CapstoneSponsorPerson}\par}
+            {\large Prepared by }\par
+            Group\CapstoneTeamNumber\par
+            % 5. comment out the line below this one if you do not wish to name your team
+            \CapstoneTeamName\par 
+            \vspace{5pt}
+            {\Large
+                \NameSigPair{\GroupMemberOne}\par
+                \NameSigPair{\GroupMemberTwo}\par
+                \NameSigPair{\GroupMemberThree}\par
+            }
+            \vspace{20pt}
+        }
+        \begin{abstract}
+        % 6. Fill in your abstract    
+This project aims to develop an open source Learning Module System that will be used by students to learn course material and complete online homework. The project, titled BoxSand, provides Open Educational Resources with a primary goal to provide students and instructors with an all-in-one online learning environment. This includes links to videos, practice problems, open source textbooks, educational websites, simulations, and more. The main goal of BoxSand is to improve student performance by providing access to free and open source resources all in one location. It aims to engage students and provide them with feedback while using the student’s site interaction and engagement to track success and improve content.  (\url{https://tobi.oetiker.ch/lshort/lshort.pdf})
+        \end{abstract}     
+    \end{singlespace}
+\end{titlepage}
+\newpage
+\pagenumbering{arabic}
+\tableofcontents
+% 7. uncomment this (if applicable). Consider adding a page break.
+%\listoffigures
+%\listoftables
+\clearpage
+
+% 8. now you write!
+\section{Problem Definition}
+
+\subsection{Introduction}
+College is expensive. Students pay more and more for tuition and fees every year. The cost of textbooks and materials increases every year. The price of rent in most college towns is on a steady rise. While the cost of college is a big and complicated problem, any small step to decrease the cost to the student can be a huge help. So what if students didn’t have to pay for their textbooks and other learning resources? 
+Several years ago Dr. Walsh started to question why students were paying so much for textbooks and online homework access when there are free and open source materials. At the same time, Dr. Walsh questioned if there was a correlation between student success in a class and the level of interaction with the course resources. He also started developing his own open educational resources to supplement his teaching. The content Dr. Walsh created and the need for data about student interaction and success served as the beginning of the BoxSand project. On BoxSand.org, Dr. Walsh was able to give his students customized course resources and ultimately create a far more successful learning environment. 
+
+\subsection{Project Description}
+At its core BoxSand is driven by a need to create an all-in-one open source learning website that is free and available for use by both students and instructors. Currently, BoxSand allows its users to access educational resources that already exist but needs a design overhaul to help usher in a new wave of content and contribution while still providing the same level of easy access. The current BoxSand links to dozens of other websites for material, and uses a non-free service as a homework system. The long term goal is to have a modular website where instructors can create a course in any subject and contribute and edit content. The goal for this development team is to set up an environment where this is possible. The development team will design, document, and begin implementation of that framework. This includes the tracking of student interaction with the site while using the OpenStax suite of technologies and adding a homework system. Completing this task may require substantial changes to the underlying codebase of the project, with special attention towards decreasing code complexity, maximizing maintainability to assist future development and fostering new content contribution.
+
+\section{The Future of BoxSand}
+BoxSand’s intention is to grow far beyond the development goals of this team. Using content from various open sources and from the OpenStax partnership, future development teams should be able to extend the capabilities of BoxSand to include additional content and increase user interaction capabilities. Future goals for BoxSand include peer-to-peer collaboration tools such as virtual whiteboards, gamification of learning modules and courses, adaptive learning and others.
+
+\section{Solution}
+Our proposed solution is to create a system using the OpenStax framework that works as a base system that instructors can add content to and build on to create and assign homework. Our solution will incorporate the Physics content already offered by BoxSand.org to demonstrate system function and features and to provide data for Dr. Walsh. We plan to build the website from the ground up and the transfer the current BoxSand content and functionality. We also will be including content from the OpenStax textbook and question bank. Ideally, both of these will be integrated into the website in such a way that if a student is working inside of the BoxSand site they will not have to actually leave the site to access any resources. We also plan to have a way for the instructor of the course to be able to track their student’s progress in an easily readable manner. Ideally the teacher will be able to see student’s time spent reading textbooks, and watching online lectures, in addition to their time spent on questions, and amount of right vs wrong answers.	
+
+There will be a few components of this solution. The first will be developing the backend support for the system to be hosted on. This includes a way to manage the user accounts and storing passwords in a secure way. The next will be developing a paper prototype of how the system will work from the user’s point of view and expanding that into a plan for how the system will be designed and developed. The next component will be coding the backend functions that interact with the database as well as the front end code that dictates what the user interacts with. These include storage and reference of the questions as well as their correct answer or answers, the ability to track the number of attempts allowed and used, as well as storing what questions students got correct and what questions they did not. There will also be a connection between the textbook and the homework problems that are relevant to that material. The final component will be conducting a texting the system as a whole to insure it is suitable for a real life application. This means testing the system near the end of the process to make sure that the user’s will be able to use the system with little to no trouble and if issues arise in that testing, either solving the problems to make the system more user friendly or creating a help guide that the user can reference. 
+
+\section{Performance Metrics}	
+To achieve our development goals we will need to create a website that provides four core functions. One, it will integrate the OpenStax physics textbook within the BoxSand site. Two, we will also have a homework system integrated with OpenStax QuadBase questions. This will be implemented in the same way as the OpenStax textbook in that the students will not have to leave the BoxSand site in order to work on their homework. Three, we will migrate the information from the existing BoxSand site. Four, the instructor of the course will be able to monitor the student’s relevant progress and site interaction. Such data includes time spent in text book, time spent watching videos, time spent on homework, and homework score. This information will be used by the instructor to study student performance.
+
+
+\end{document}
