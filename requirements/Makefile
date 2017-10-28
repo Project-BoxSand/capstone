@@ -1,2 +1,2 @@
 all:
-	pdflatex problemstatement_6_final.tex
+	pdflatex problemrequirements_6_draft.tex

@@ -94,6 +94,26 @@ This development team will produce the BoxSand OpenStax site. At its core BoxSan
 \item[4] An instructor must be able to generate a downloadable gradebook of student scores
 \end{enumerate}
 
+\subsection{Definitions, acronyms, and abbreviations}
+This information may be provided by reference to one or more appendixes in the SRS or
+by reference to other documents.
+
+Please see Appendix A for a glossary of terminology. 
+
+\subsection{References}
+
+\subsection{Overview}
+
+\begin{enumerate}
+\item The end goal of this iteration of BoxSand is to have the following:
+\begin{enumerate}
+\item Provide access to the OpenStax text book
+\item A homework system that allows the instructor to add questions to the course.
+\item Ability for the instructor to assign homework
+\item Ability for instructor to view student's grades 
+\item Student Dashboard for viewing their progress
+\end{enumerate}
+\end{enumerate}
 
 \section{Overall Description}
 
@@ -154,17 +174,6 @@ Source:
 
 \subsection{Product Functions}
 
-\begin{enumerate}
-\item The end goal of this iteration of BoxSand is to have the following:
-\begin{enumerate}
-\item Provide access to the OpenStax text book
-\item A homework system that allows the instructor to add questions to the course.
-\item Ability for the instructor to assign homework
-\item Ability for instructor to view student's grades 
-\item Student Dashboard for viewing their progress
-\end{enumerate}
-\end{enumerate}
-
 \subsection{User Characteristics}
 There are two main types of user for the BoxSand website. One is the instructor, who will usually be a master in their respective field most often having completed a masters degree or above (ages vary). The other user is the student, which will typically consist of an undergraduate student with a typical age range from 18-24. 
 
@@ -186,19 +195,191 @@ There are two main types of user for the BoxSand website. One is the instructor,
 
 \subsection{Assumptions and Dependencies}
 
+\subsection{Apportioning of Requirements}
+
 \section{Specific Requirements}
+The development team must strive to meet these goals:
+
+\begin{enumerate}
+\item The website that will be developed must provide access to the OpenStax Physics textbook within the site itself. 
+\item Users will be able to log in as either a student or as an instructor. If the user is a student then they will be able to:
+\begin{enumerate}
+\item Log in using their school login. A current OSU student will be able to login using their onid account. 
+\item See what has been assigned to them. All assigned assignments will be listed on the student's dashboard so they can see them.
+\item Complete online homework. When logged in as a student, the user will be able to answer the assigned questions. 
+\item Access the online textbook and other provided resources. Content that is currently on the BoxSand site will be pulled into the new site.
+\end{enumerate}
+If the user is logged in as an Instructor then they will be able to:
+\begin{enumerate}
+\item Login to a different view of the software from that of the students. A current OSU teacher will be able to login using their onid account.
+\item Assign homework and reading to the students with due dates. An instructor user will be able to create an assignment by combining pieces of the BoxSand text and questions drawn from a bank of questions. Those assignments will have the ability to be given a due date.
+\item Add questions to the database of homework problems. An instructor will be able to submit a new question to the database of homework questions.
+\item Download a CSV gradebook of student scores. An instructor will be able to download a CSV file of the students and the grades they got on their homework.
+\end{enumerate}
+\item Provide a homework system within the site that allows an instructor of a course to provide questions with answers, Assign a value to the question and, assign a group of questions or a single question as an assignment to a course.
+\item Instructor must also be able to assign reading homework from the textbook for students within a course
+\item An instructor must be able to generate a downloadable gradebook of student scores
+\end{enumerate}
 
 \subsection{External Interfaces}
+\begin{enumerate}
+\item Name of item; 
+\item Description of purpose; 
+\item Source of input or destination of output; 
+\item Valid range, accuracy, and/or tolerance; 
+\item Units of measure; 
+\item Timing; 
+\item Relationships to other inputs/outputs; 
+\item Screen formats/organization; i) Window formats/organization; 
+\item Data formats; 
+\item Command formats; 
+\item End messages.
+\end{enumerate}
 
-To achieve our development goals we will need to create a website that provides four core functions. One, it will integrate the OpenStax physics textbook within the BoxSand site. Two, we will also have a homework system integrated with OpenStax QuadBase questions. This will be implemented in the same way as the OpenStax textbook in that the students will not have to leave the BoxSand site in order to work on their homework. Three, we will migrate the information from the existing BoxSand site. Four, the instructor of the course will be able to monitor the student's relevant progress and site interaction. Such data includes time spent in text book, time spent watching videos, time spent on homework, and homework score. This information will be used by the instructor to study student performance.
+\subsection{Functions}
 
+\begin{enumerate}
+\item Validity checks on inputs 
+\item Exact sequence of operations
+\item Responses to abnormal situations, including \begin{enumerate}
+\item Overflow
+\item Communication facilities
+\item Error handling and Recovery.
+\end{enumerate}
+\item Effects of parameters.
+\item Relationship of outputs to inputs including
+\begin{enumerate}
+\item input / output sequences
+\item formulas for input to output conversion
+\end{enumerate}
+\end{enumerate}
 
-\section{Design Constraints}
+\subsection{Performance Requirements}
 
+\subsection{Logical Database Requirements}
+
+\subsection{Design Constraints}
+
+\subsubsection{Standards Compliance}
+\begin{enumerate}
+\item Report format.
+\item Data naming.
+\item Accounting procedures.
+\item Audit tracing.
+
+\end{enumerate}
+
+\subsection{Software System attributes}
+
+\subsubsection{Reliability}
+
+\subsubsection{Availability}
+
+\subsubsection{Security}
+
+\subsubsection{Maintainability}
+
+\subsubsection{Portability}
+
+\subsection{Organizing the specific requirements}
+
+\subsubsection{System mode}
+
+\subsubsection{User class}
+
+\subsubsection{Objects}
+
+\subsubsection{Feature}
+
+\subsubsection{Stimulus}
+
+\subsubsection{Response}
+
+\subsubsection{Functional hierarchy}
+
+\subsection{Additional comments}
 
 \section{Supporting Information}
 
+\subsection{Table of contents and index}
+
 \subsection{Appendixes}
+
+\subsubsection{Appendix A - Terminology}
+\begin{obeylines}
+Project BoxSand or BoxSand
+OER
+OpenStax 
+Course
+Instructor
+Student
+Administrator
+Teaching Assistant (TA)
+Assignment
+Learning Module
+Daily Learning Guide
+Gradebook
+Reading
+Homework
+Quiz
+Question
+Page
+User
+Unregistered
+Registered
+Organization
+Tutor
+Tracking
+Content
+Resources
+Media
+AsyncSync
+Adaptive Learning
+Virtual Whiteboard
+Chat client
+Physics with Algebra
+Physics with Calculus
+eCampus
+Flipped Classroom
+Kaltura
+YouTube
+MasteringPhysics
+PeerCeptiv
+Facebook
+Canvas
+Oregon State University
+OSU Physics Department
+Drupal
+Docker
+VM
+Wireframe
+Vagrant
+Ansible
+Ruby
+Rails
+HTML
+CSS
+JS
+Rbenv
+Node (NodeJS)
+Client-side (client)
+Server-side (server)
+Customer
+Sketch
+Sparfa
+BigLearn
+AWS
+Linode
+Dev
+Production
+Live
+GitHub
+GitLab
+OSL
+CMS
+Bootstrap
+\end{obeylines}
+
 
 \subsubsection{Appendix B - Gantt Chart}
 See the Project BoxSand Roadmap document.
