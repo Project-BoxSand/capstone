@@ -1,0 +1,55 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}Purpose}{2}
+\contentsline {subsection}{\numberline {1.2}Scope}{2}
+\contentsline {subsection}{\numberline {1.3}Definitions, Acronyms, and Abbreviations}{2}
+\contentsline {subsubsection}{\numberline {1.3.1}Adaptive Learning}{2}
+\contentsline {subsubsection}{\numberline {1.3.2}AsyncSync}{3}
+\contentsline {subsubsection}{\numberline {1.3.3}CAS}{3}
+\contentsline {subsubsection}{\numberline {1.3.4}COSINe}{3}
+\contentsline {subsubsection}{\numberline {1.3.5}Daily Learning Guide}{3}
+\contentsline {subsubsection}{\numberline {1.3.6}OER}{3}
+\contentsline {subsection}{\numberline {1.4}References}{3}
+\contentsline {subsection}{\numberline {1.5}Overview}{3}
+\contentsline {section}{\numberline {2}Overall Description}{4}
+\contentsline {subsection}{\numberline {2.1}Product Perspective}{4}
+\contentsline {subsubsection}{\numberline {2.1.1}User Interfaces}{4}
+\contentsline {subsubsection}{\numberline {2.1.2}Operations}{4}
+\contentsline {subsubsection}{\numberline {2.1.3}Site Adaptation Requirements}{5}
+\contentsline {subsection}{\numberline {2.2}Product Functions}{5}
+\contentsline {subsection}{\numberline {2.3}User Characteristics}{5}
+\contentsline {subsection}{\numberline {2.4}Constraints}{5}
+\contentsline {subsubsection}{\numberline {2.4.1}Regulatory Policies}{5}
+\contentsline {subsubsection}{\numberline {2.4.2}Hardware Limitations}{5}
+\contentsline {subsubsection}{\numberline {2.4.3}Interfaces to Other Applications}{5}
+\contentsline {subsubsection}{\numberline {2.4.4}Audit Functions}{6}
+\contentsline {subsubsection}{\numberline {2.4.5}Control Functions}{6}
+\contentsline {subsubsection}{\numberline {2.4.6}Higher-order Language Requirements}{6}
+\contentsline {subsubsection}{\numberline {2.4.7}Safety and Security Concerns}{6}
+\contentsline {subsection}{\numberline {2.5}Assumptions and Dependencies}{6}
+\contentsline {subsection}{\numberline {2.6}Apportioning of Requirements}{6}
+\contentsline {section}{\numberline {3}Specific Requirements}{7}
+\contentsline {subsection}{\numberline {3.1}External Interfaces}{8}
+\contentsline {subsubsection}{\numberline {3.1.1}User Interface}{8}
+\contentsline {subsubsection}{\numberline {3.1.2}Hardware Interfaces}{8}
+\contentsline {subsubsection}{\numberline {3.1.3}Software Interfaces}{8}
+\contentsline {subsection}{\numberline {3.2}Functional Reqiurements}{8}
+\contentsline {subsubsection}{\numberline {3.2.1}Login}{8}
+\contentsline {subsubsection}{\numberline {3.2.2}Content Display}{9}
+\contentsline {subsubsection}{\numberline {3.2.3}Homework System}{9}
+\contentsline {subsubsection}{\numberline {3.2.4}Dashboard}{9}
+\contentsline {subsubsection}{\numberline {3.2.5}User Tracking}{9}
+\contentsline {subsubsection}{\numberline {3.2.6}Tracking Report}{9}
+\contentsline {subsection}{\numberline {3.3}Performance Requirements}{9}
+\contentsline {subsection}{\numberline {3.4}Logical Database Requirements}{9}
+\contentsline {subsection}{\numberline {3.5}Software System attributes}{10}
+\contentsline {subsubsection}{\numberline {3.5.1}Usability and Effectiveness}{10}
+\contentsline {subsubsection}{\numberline {3.5.2}Reliability}{10}
+\contentsline {subsubsection}{\numberline {3.5.3}Extensibility and Scalability}{10}
+\contentsline {subsubsection}{\numberline {3.5.4}Interoperability}{10}
+\contentsline {subsubsection}{\numberline {3.5.5}Availability}{10}
+\contentsline {subsubsection}{\numberline {3.5.6}Maintainability}{11}
+\contentsline {subsubsection}{\numberline {3.5.7}Portability}{11}
+\contentsline {subsubsection}{\numberline {3.5.8}Integrity, Testability, and Privacy}{11}
+\contentsline {subsubsection}{\numberline {3.5.9}Accessibility}{11}
+\contentsline {subsection}{\numberline {3.6}Appendixes}{11}
+\contentsline {subsubsection}{\numberline {3.6.1}Appendix A - Gantt Chart (Continued on next page)}{11}
