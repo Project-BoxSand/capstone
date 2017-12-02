@@ -9,4 +9,4 @@ all:
 	  cp designdocument_6_final.pdf ../
 
 clean:
-	rm -f *.log *.pdf ./tex/*.aux ./tex/*.log
+	rm -f *.log ./tex/*.aux ./tex/*.log
