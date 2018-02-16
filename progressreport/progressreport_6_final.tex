@@ -1,0 +1,205 @@
+\documentclass[onecolumn, draftclsnofoot,10pt, compsoc]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{pdfpages}
+\usepackage{lscape}
+\usepackage[noadjust]{cite}  
+\usepackage{multicol}
+\usepackage{geometry}
+\geometry{textheight=9.5in, textwidth=7in}
+
+% 1. Fill in these details
+\def \CapstoneTeamName{		Project BoxSand}
+\def \CapstoneTeamNumber{		6}
+\def \GroupMemberOne{			Max Moulds}
+\def \GroupMemberTwo{			Sam Morey}
+\def \GroupMemberThree{			Anya Lehman}
+\def \CapstoneProjectName{		Project BoxSand}
+\def \CapstoneSponsorCompany{	Oregon State Physics Department}
+\def \CapstoneSponsorPerson{		Dr. Kenneth Walsh}
+
+% 2. Uncomment the appropriate line below so that the document type works
+\def \DocType{		Progress Report
+				%Requirements Document
+				%Technology Review
+				%Design Document
+				%Progress Report
+				}
+			
+\newcommand{\NameSigPair}[1]{\par
+\makebox[2.75in][r]{#1} \hfil 	\makebox[3.25in]{\makebox[2.25in]{\hrulefill} \hfill		\makebox[.75in]{\hrulefill}}
+\par\vspace{-12pt} \textit{\tiny\noindent
+\makebox[2.75in]{} \hfil		\makebox[3.25in]{\makebox[2.25in][r]{Signature} \hfill	\makebox[.75in][r]{Date}}}}
+% 3. If the document is not to be signed, uncomment the RENEWcommand below
+%\renewcommand{\NameSigPair}[1]{#1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{titlepage}
+    \pagenumbering{gobble}
+    \begin{singlespace}
+        \hfill 
+        % 4. If you have a logo, use this includegraphics command to put it on the coversheet.
+        %\includegraphics[height=4cm]{CompanyLogo}   
+        \par\vspace{.2in}
+        \centering
+        \scshape{
+            \huge CS Capstone \DocType \par
+            {\large\today}\par
+            \vspace{.5in}
+            \textbf{\Huge\CapstoneProjectName}\par
+            \vfill
+            {\large Prepared for}\par
+            \Huge \CapstoneSponsorCompany\par
+            \vspace{5pt}
+            {\Large\NameSigPair{\CapstoneSponsorPerson}\par}
+            {\large Prepared by }\par
+            Group\CapstoneTeamNumber\par
+            % 5. comment out the line below this one if you do not wish to name your team
+            \CapstoneTeamName\par 
+            \vspace{5pt}
+            {\Large
+                \NameSigPair{\GroupMemberOne}\par
+                \NameSigPair{\GroupMemberTwo}\par
+                \NameSigPair{\GroupMemberThree}\par
+            }
+            \vspace{20pt}
+        }
+
+    \end{singlespace}
+\end{titlepage}
+\newpage
+\pagenumbering{arabic}
+
+\tableofcontents
+% 7. uncomment this (if applicable). Consider adding a page break.
+%\listoffigures
+%\listoftables
+
+\clearpage
+% 8. now you write!
+\singlespacing
+
+\section{Introduction}
+\subsection{Purpose}
+Project BoxSand was created in 2015 by Dr Kenneth Walsh of the Physics Department at Oregon State University as a way to provide a resource for his physics students where they could access the materials they needed for the class without requiring them to pay the rising costs for textbooks and online homework. Dr Walsh, with the assistance of many contributors, created a website where he grew a collection of resources for his students which includes everything from his own physics textbook to lector videos he created. This fall is the first full year of deployment for this site. But the project did not stop there, he wanted to create a way for his students to interact with the site and complete their online homework. That is where this project comes in.
+
+\subsection{Goals}
+Project BoxSand aims to develop an open source Learning Module System where students can go to learn course material and complete online homework. The goal of the project is to provide Open Educational Resources with a primary goal to provide students and instructors with an all-in-one online learning environment. The main goal of BoxSand is to improve student performance by providing access to free and open source resources all in one location. This includes links to lector videos, homework and practice problems, simulations, open source textbooks, other potentially useful educational websites, and more. Project BoxSand aims to engage students and provide them with feedback while using the student's interaction with the site to track success and improve content.
+
+\subsection{Scope}
+Since this is the first large-scale overhaul of the BoxSand project, there will be several cycles of the project that will be spread out over several years and different development teams. This development team and this cycle will mainly focus on developing long-term and overarching development goals and procedures for future project development. Additionally, this development team will also create an initial proof of concept for site functionality demonstration and future feature integration.
+This first iteration of the project will be successfully completed when the following criteria are met. The website that will be developed must provide access to the OpenStax Physics textbook within the site itself. The Instructor must also be able to assign reading homework from the textbook for students within a course. It also must provide a homework system within the site that allows an instructor of a course to provide questions with answers, Assign a value to the question and, assign a group of questions or a single question as an assignment to a course. It should also be able to provide a way for students to complete the assigned homework and reading. Finally, an instructor must be able to generate a downloadable gradebook of student scores.
+
+\section{Progress}
+\subsection{Current Project State}
+As of the end of our first term on the project, we have been able to develop a plan for how we plan to implement the project. To begin, we meet with Dr Walsh and discussed with him his vision of the project. From this we developed a list of requirements that we would need to complete by the end of the year as well as some stretch goals that we could complete if we found the time. From this point we began to research routes we could take to complete the project. This includes development strategies and the technologies we might need to use. Once we felt comfortable with the information we had gathered we began to develop a plan as to how to carry out the project.
+
+
+\subsection{Issues}
+Throughout this project we have come across three main issues. The first being what we are referring to as the Money Motivator Issue. Any time you try and take something that costs money and make it free, people generally are not very willing to collaborate with you. Since the current state of textbooks and online homework systems make a decent profit for those who are working on them, we have found that potential collaborators are less than eager to contribute to something that could lose them money in the end.
+
+The next issue we are facing is what we are referring to as the Bureaucratic Approval Systems. Since we are developing a product for the use of Oregon State Students, we have to get a lot of approval from several different entities in order for our project to be allowed in the school curriculum. While this problem is mainly on the shoulders of our client, we also have to make sure that nothing we produce will cause disapproval by any one of these groups.
+
+The final issue we are facing is the partnership issues between both us and our potential partners OpenStax and our potential partners Canvas. While both groups appear to be interested in gaining from us, there are different concerns with working with each. The concern of Canvas is the generalized dislike of the way Canvas works as well as a lack of resources to learn more about how to connect our system to the system that Canvas has. The concern of OpenStax is that they seem to be interesting in changing from being open source to becoming a paid product and therefore less interested in investing in open source projects. Although this has not been confirmed, the meetings we have had with them have left us nervous and questioning.
+
+In order to overcome these pitfalls, we have had to learn how to better rephrase our design goals so that they focus more on the benefits to the students and less on the fact that free online homework means none will be paying for online homework anymore. We have also learned how to come to outside meeting better prepared with questions and proof of concept
+
+\subsubsection{Interesting Code}
+
+\section{Retrospective}
+\subsection{Table}
+
+
+ 
+
+\begin{tabular}{|p{0.3\linewidth}|p{0.3\linewidth}|p{0.3\linewidth}|}
+\hline
+Positives - anything good that happens &
+Deltas - changes that need to be implemented & 
+Actions - to be implemented \\
+\hline
+% Week 0
+Kanban deployed nicely on engr site, still http only. & 
+Test severs need to be wiped since they have old boxsand test stuff on them and partial deploys. & 
+Set up a test environment for team 2 \\
+\hline
+% Week 1
+Thursday - Oxwebview, openstaxcms, accounts first full initial deploy for demo  &
+Forcing HTTPS on kanban and still working on the DHTML issue from the old site &
+Testing for drupal 8 if we need to. \\
+\hline
+% Week 2
+Need to get idea of framework for long term planning & 
+Client and group meetings when assigned. &
+Class is just starting? Meet with group?\\
+\hline
+% Week 3
+Student dev pack and organization status for the github for the project. Submitted some other account stuffs in the name. &
+Need to get the new 5 dollar slice on linode right. &
+toolbelt define. doc manifest (I know we might do it later, but we need it now)\\
+\hline
+% Week 4
+Prepared capstone requirements. Clarified the extra missing stuffs.Meet with openstax to set the next round of meetings with dev and research teams, Finished the tex template, Started the capstone repo, Reserved boxsand namespaces on github, revist later - pass pws 2nd poc  &
+(see the mail email chain for more detail ), Try and finish early due to midterms in back half, Wireframes+paper proto, Milestones and gnatt,Dev (docker and aws (if approved)), Prep for the 2 wk spike for openstax meeting    &
+Worried about scaling, testing, quick deploys, getting past this doc writting stage into the real meat beyond just slice n dice of openstax.\\
+\hline
+% Week 5
+Wireframe, MacOS, Sketch, etc. It was an odd week. Problem requirement depth finding, which was not as successful as I'd feel it should have been. That is, I am not as certain with the requirement document's long term validity as I should be. It is more living than the problem statement.   &
+Need to work more with sketch and the mac env I just set up. It is possible we could abandon this but right now seems to be the best path to success.  &
+Gantt Chart needs to be filled out and meaningfully updated if possible.\\
+\hline
+
+% Week 6
+OpenStax meeting and Cosine meeting this week, each one was interesting but the openstax meeting was the most unsettling because they believe we have a difficult job in translating their assessment library (quadbase) - edit: I now agree with them. &
+Need to build a demo for the openstax for the winter break gap for show and tell also clickable something for interest meetings.  &
+Need to refactor minor feature list with the meetings from this week. Also, data scraping and research stuffs need to find their way to me. \\
+\hline
+\end{tabular}
+\newpage
+\begin{tabular}{|p{0.3\linewidth}|p{0.3\linewidth}|p{0.3\linewidth}|}
+Positives - anything good that happens &
+Deltas - changes that need to be implemented & 
+Actions - to be implemented \\
+\hline
+% Week 7
+Did we get client consent done right? Also, I feel okay with the docs so far but something seems to be missing. &
+Individual: This week we completed the technology review rough draft, so we need to change that mentality since a more complete and not fragmented development process would be nice. Also devs got 17.10 &
+ Need to speed up dev deploys, to iron out the old watermarking/branding from openstax (?term) Technology Review compose from all individual, need to work on deployable test (demo) or proof of concept. Also kaltura, need to specify interface.  \\
+\hline
+
+% Week 8
+Not a single good thing happened this week. Apt is broke on all my dev servers, https is seg faulting for some reason (fixed, duh) difference between docker compose and docker file and base image creations means that all the work I did is/was wrong... great. &
+Change the image build to a slim image and a manifest or whatever docker wants me to call it. &
+Need another mini-demo, check into joyride and react to see if there are some relics from the openstax demo days. \\
+\hline
+% Week 9
+straightened out the relationship between CNX and OpenStax and now need to make our own "CNX" a bit more formally defined. (Also, see the notes in from the doc brainstorm for more info)  &
+There seem to be more issues than normal building their site with more recent commits. &
+Need to work on design document and progress report.\\
+\hline
+% Week 11
+ Assessments (quadbase) seems to be less cluttered than I thought. Removed some dependencies and now have a better understanding of total OpenStax ecosystem. Meeting with Canvas people also helped define the future vision.   &
+Canvas compliance needs a better roadmapping. This maybe outside this cycle but worth a solid glance.  &
+Need to finalize the container for winter quarter, also test canvas integration just for fun. \\
+\hline
+\end{tabular}
+
+
+\subsection{Summary}
+Over these past ten weeks we have become a lot more comfortable and familiar with our project as well as each other and our client Dr. Walsh. We have been able to establish the goals and requirements of the project and get a better understanding of what all needs to be done and what could be done. 
+
+Moving forward, we will need to decide on if we want to go the canvas route or if we want to stay with our initial plan of partnering with OpenStax. If we partner with Canvas we will need to make revisions to our requirements document and our design document because it will change what tools we have at our disposal.
+
+Next term, we plan to set up our work environment and get a basic version of the site working. This includes creating the login capabilities and create two different types of users, instructor vrs student,  where the instructor type user can create and assign homework and reading and the student type user can complete the homework and reading. Then once that is complete we can begin to look into our stretch goals.
+
+\section{Appendix}
+
+\subsection{References}
+\bibliographystyle{IEEEtran}  
+\bibliography{progressreport_6_final} 
+
+\end{document}
+
