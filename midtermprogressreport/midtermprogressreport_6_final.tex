@@ -1,0 +1,158 @@
+\documentclass[onecolumn, draftclsnofoot,10pt, compsoc]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{pdfpages}
+\usepackage{lscape}
+\usepackage[noadjust]{cite}  
+\usepackage{multicol}
+\usepackage{geometry}
+\geometry{textheight=9.5in, textwidth=7in}
+
+% 1. Fill in these details
+\def \CapstoneTeamName{		Project BoxSand}
+\def \CapstoneTeamNumber{		6}
+\def \GroupMemberOne{			Max Moulds}
+\def \GroupMemberTwo{			Sam Morey}
+\def \GroupMemberThree{			Anya Lehman}
+\def \CapstoneProjectName{		Project BoxSand}
+\def \CapstoneSponsorCompany{	Oregon State Physics Department}
+\def \CapstoneSponsorPerson{		Dr. Kenneth Walsh}
+
+% 2. Uncomment the appropriate line below so that the document type works
+\def \DocType{		Progress Report
+				%Requirements Document
+				%Technology Review
+				%Design Document
+				%Progress Report
+				}
+			
+\newcommand{\NameSigPair}[1]{\par
+\makebox[2.75in][r]{#1} \hfil 	\makebox[3.25in]{\makebox[2.25in]{\hrulefill} \hfill		\makebox[.75in]{\hrulefill}}
+\par\vspace{-12pt} \textit{\tiny\noindent
+\makebox[2.75in]{} \hfil		\makebox[3.25in]{\makebox[2.25in][r]{Signature} \hfill	\makebox[.75in][r]{Date}}}}
+% 3. If the document is not to be signed, uncomment the RENEWcommand below
+%\renewcommand{\NameSigPair}[1]{#1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{titlepage}
+    \pagenumbering{gobble}
+    \begin{singlespace}
+        \hfill 
+        % 4. If you have a logo, use this includegraphics command to put it on the coversheet.
+        %\includegraphics[height=4cm]{CompanyLogo}   
+        \par\vspace{.2in}
+        \centering
+        \scshape{
+            \huge CS Capstone \DocType \par
+            {\large\today}\par
+            \vspace{.5in}
+            \textbf{\Huge\CapstoneProjectName}\par
+            \vfill
+            {\large Prepared for}\par
+            \Huge \CapstoneSponsorCompany\par
+            \vspace{5pt}
+            {\Large\NameSigPair{\CapstoneSponsorPerson}\par}
+            {\large Prepared by }\par
+            Group\CapstoneTeamNumber\par
+            % 5. comment out the line below this one if you do not wish to name your team
+            \CapstoneTeamName\par 
+            \vspace{5pt}
+            {\Large
+                \NameSigPair{\GroupMemberOne}\par
+                \NameSigPair{\GroupMemberTwo}\par
+                \NameSigPair{\GroupMemberThree}\par
+            }
+            \vspace{20pt}
+        }
+\begin{abstract}
+The purpose of this document is to serve as a recap of the progress completed by Team BoxSand on the BoxSand project thus far. The document will contain an introduction to the project, a summary of the current state of the project, what is left to do in the project, problems the development team has run into,and a conclusion. The main content sections will have subsections written by each of the three group members.  
+\end{abstract}
+    \end{singlespace}
+\end{titlepage}
+\newpage
+\pagenumbering{arabic}
+
+\tableofcontents
+% 7. uncomment this (if applicable). Consider adding a page break.
+%\listoffigures
+%\listoftables
+
+\clearpage
+% 8. now you write!
+\singlespacing
+
+\section{Introduction}
+At its core BoxSand is driven by a need to create an all-in-one open source learning website that is free and available for use by both students and instructors. Currently, BoxSand allows its users to access educational resources that already exist but needs a design overhaul to help usher in a new wave of content and contribution while still providing the same level of easy access. The current BoxSand links to dozens of other websites for material, and uses a non-free service as a homework system. The long term goal is to have a modular website where instructors can create a course in any subject and contribute and edit content. The goal for this development team is to set up an environment where this is possible. The development team will design, document, and begin implementation of that framework. This includes the tracking of student interaction with the site while using the OpenStax suite of technologies and adding a homework system. Completing this task may require substantial changes to the underlying codebase of the project, with special attention towards decreasing code complexity, maximizing maintainability to assist future development and fostering new content contribution.
+\section{Current State}
+\subsection{Anya}
+The state of the project from the User Experience side of things is decently far along. There is an established first draft of the style guide which has partially been implemented so as to see if the current direction of the style guide is appropriate for the project. This style guide includes the change from the OpenStax and Rice University logos and color themes to those of Oregon State. There was also a need to develop the logo and color theme for project BoxSand. Previously, the project BoxSand was simply just working off of a very unspecific orange and black color theme and did not have an official logo. While the team does not want to spend too much time being graphic design students creating a logo and arguing the colors, it is recognized that there needs to be internal consistency and recognition of the end goal for these things so if the site where to go through a marketing clean up, the changes on the user’s mental model of the site will be minimalized. 
+
+In this effort, the team has identified a first draft of the color theme. This came from the official colors given by Oregon State University as the exact web colors the university uses in all of their marketing. The idea is that if BoxSand keeps with this color theme, the site will be able to obtain external consistency since the whole of the user population is currently simply the physics students at Oregon State. Images have also been recovered to use for the task of replacing the Rice University logo with that of the logo for Oregon State. The other task that has been completed is there have been developed a handful of rough draft logo concepts that the client can consider and give feedback on. The most recent meeting with the team and the client has also given the team more inspiration as to ways the logo task can go.
+
+The client has been given the current style guide for his approval and option. Due to a personal conflict, the client has been unable to give feedback at this point. However, the client has reached out again, informed the team of the reason for the delay in feedback, and has begun to consider the first draft of the style guide. In terms of other feedback on the user’s experience, the team has begun to develop a plan for running a cognitive walkthrough of the site. The goals for this activity have been established as ensuring that the user’s of the site will be able to comfortably complete their online homework. 
+
+\subsection{Max}
+BoxSand development is in crunch time and has segmented the project into 4 core components; tutor, accounts, exercises and books, and tracking. The first three have existing code from a partner that needs to be groked so that our implementation of user tracking for our client is of equal quality. General progress on the project includes the creation of the development environment, a publicly facing production testing environment, and local testing environments. We have documented base system dependencies and have described system configuration needed for general component deployment in both production and development environments. 
+
+Accounts has been partially tested and is the furthest along. It has been well documented for development deployments and partially documented and tested for production deployments. Currently, we are tailoring this component for final branding and testing.  
+
+Tutor has been somewhat troublesome since it relies heavily on two other components for majority of its testing. While all aspects of this component that can stand alone from the other two components are fairly well understood some confusion arises around the behavior of the partner code and the use of a another third party codebase.
+
+The exercise and book component is actually two components that are often bundled together conceptually by our partners. For our development cycle we need to ensure that access to both is maintained and this is the current issue with exercises. Books on its own is mostly done and can start the next round of testing and development. Exercises has some issues with resource limits concerning its caching implementation with Redis. The framework for adding and removing exercises has been tested from the web interface to some degree. 
+
+Tracking is undeveloped. It is waiting for the other three components that were inherited codebases to be fully understood. This component poses the most implications to overall app performance and security and additionally is a large interest to our client. 
+
+\subsection{Sam}
+The project is currently in a good state, we have a working website that allows users to login and stores their accounts. A lot of the features for our website are currently in the works. For instance right now we are working on having our exercises database completed and working on a way to display some open source textbooks. Currently I am working on account verification through email, this would work by the user entering their email and password and then receiving a 6 digit pin to be entered on the website. I am also working on having our website authenticate through the Oregon State University login system (CAS). We want users to be able to have both options for logins, in order to fulfill two of our requirements. One of these requirements being that Oregon State University students must be able to log int through CAS, and the other requirement is that non OSU students must have a way to login into the website as well. These non OSU students will only be able to view a course’s content, so that they can follow along if they wish, but they will not be able to participate in the courses homework assignments. This current task is going well and should hopefully be implemented within the next two weeks. 
+
+
+\section{Todo}
+\subsection{Anya}
+The next steps on this portion of the project are to, receive feedback from the client on the direction of the style guide, implement and test the decisions from the style guide, and run a cognitive walkthrough of the site as a whole. The client’s opinion of the style guide is very important as the site will be a representation of years of his work. If the site is not an accurate representation of the client, then it will be misleading for the users. The feedback from the client will also be important because he has the most expertise when it comes to what his students need and what they are looking for from the site. Since our user population can be limited down to the student’s in our client’s physics class, the client’s exposure to our user population is very important for making sure our site is fitting the needs of our users.
+
+The implementation of the style guide onto the site will be the next step taken by the group members in regards to the user experience part of the project. This will entail going into the SCSS code and identifying where the changes need to be made. This process is not challenging but will take a decent amount of time and a need for attention to detail. It is expected to be completed by week eight. The necessary files for this implementation have been identified. They can be found in the asset folder of the codebase. The attention will be focused on the images folder, which holds the logos and background images on the site, and the stylesheet folder, which holds the files for the SCSS code. Some attention will also need to be given to the html folder which holds the code for the basis for the site.
+
+\subsection{Max}
+Some base system development tasks that we need to do include the setup of groundwork for our testing framework such as Capybara, Selenium, and Travis CI. Anything beyond basic documentation for those elements are listed as stretch goals so actual progress is not required. System hardening needs to be codified and some random hotfixes relating to subsystems need to be collected and documented. These include some additions to existing documentation of rbenv, nvm, Postgres, Redis, Yarn, Nginx, and Ansible.
+
+Accounts needs to be tailored for Oauth and checked in with CAS for ONID authentication and a deployment needs readying for a security audit from Learn@OSU. Some minor features left to implement are the emailer for the app and the final testing suite which is technically a stretch goal for this iteration. Also, logging and daily reporting needs to be initially documented for next iteration. 
+
+Tutor needs to test with the other two components. As with all components it needs to be flavored in the OSU way and branded accordingly. Tutor needs browser testing documentation for the next iteration and it needs some work on the development deployment scripts and processes, especially where caching and networking is concerned. Resource limits have been loosely identified but app testing in regards to actual scalability and total capability of a single deployment need to be tested. Estimations of app usage and corresponding system resource requirements are loosely documented and need to be explored beyond the initial information given. 
+
+Exercises needs the most immediate work and is the largest source of uncertainty. Books is mostly ready for the next round of development which includes building the inline reading homework system which could also include collaboration features using Hypothesis. Books also needs a standalone static build for some odd testing procedures. On that note, the longevity of any API we are using outside of any we are supporting is highly questionable due to long term goal and culture mismatch between us and our partner. We are questioning the efficacy of collaborating with our partner as a substantial divergence in long term commitments has been identified. This should not affect our development cycle now but near the end we will need to resolve and clarify this relationship. Generating correct API keys and secrets for other services is also partially unexplored and needs a thorough set of documentation.  
+
+Tracking needs an initial feeler and we are ready to do that. Since the app and the existing code inherited needed to be understood before we tried to implement something with massive implications where overhead is concerned very little actual development has occurred on this component.  
+
+General development tasks that are needing to be done also include the refactoring of the partner code for OSU and the client. This mainly includes rendering appropriate stylizing such as logos, updating the pattern library, but also setting up production deployments for OSU management. Aspects from this problem set include SSL, database locations and data retention, long term support, and others more clerical in nature.
+
+\subsection{Sam}
+Partially what is left to do where the tasks that I had mentioned above, however I chose to include them in the previous section because they are tasks that are currently being worked on. The tasks that we need to finish after completion of our current tasks are as follows, One we need a tracking system for our website. The tracking system will need to track where a user clicks on the website, how much time they spend on particular pages, how much time they spend watching videos or looking at simulations, how long a user spends on a particular homework problem, etc. This is a task I will likely be working on using JavaScript when I complete my current task. Two we need to change the style of our current website to match the vision of our client. Currently we are using a the style of the OpenStax website that we have used as our basis, however we hope to change our pages to look more in line with our Clients views soon. This is currently what Anya is working on, and she is using some tools called Sketch and Invision to do so. Three we need to implement the ability to have a professor post modules for students to look over. These modules will include homework, textbook readings, videos, and simulations. This is currently what Max is working on. 
+
+To further expand on the tracking system that I will be working on I will be going into details on why exactly it is needed. Our client (Kenneth Walsh) wants the ability to track his user’s actions so that he can create a study from the data. He ideally wants to be able to see this data and correlate it to a student’s overall performance. Dr Walsh already has roughly a years worth of data from the previous BoxSand website, and the data has shown promising results. So it is imperative that this is the next step for me to work on is achieving a tracking system. 
+
+
+
+\section{Problems}
+\subsection{Anya}
+The project has hit a few roadblocks along the way. There has been a slight delay in feedback from the client as the client understandably dealt with his home life. This has been resolved as the client made it a top priority to meet and connect again with the team as soon as possible. The style guide has been recognized and resent to the client to make things as easy as possible on the client. Another problem that the team has come across is a change in the process needed to implement the design decisions. Previously it was thought that the software used to develop the style guide could easily convert the decisions into the SCSS code. This however was found to be incorrect. The team has had to readjust and come up with a different approach to style decision implementation. The current solution is to carefully go through the current code and change and replace where the OpenStax style code differs from the desired style. The third main problem that the user experience portion of the project has come across is a lack of support and understanding for the necessity of the efforts given. This continues to be a problem. The solutions that have been suggested and considered for this problem is that the team utilize the lectures and information from Dr Burnett’s Usability class to internally identify what is actually important for the team to spend time doing and to identify the reasons how it will help the project as a whole.
+
+\subsection{Max}
+Some problems that have been dealt with include memory limits on the development instances. User authentication with postgres and redis seems to not be fully understood and therefore occasionally creeps up as a problem. Nginx limitations with reverse proxy and single development instances hosting all three currently developing components causes some overlapping issues. Keeping code changes that are temporary out of long term code commits has also been problematic due to some unfamiliarity with large source management and git. Ramifications from the large number of dependencies has impeded progress generally with specific examples such as rbenv build times for the various ruby versions, build time for native extensions by gem, SSL library exploits and fixes breaking hosting providers repos, HTTPS strict enforcement, HTTPS/SSL interaction with our DNS and CDN provider, email verification and lack of development and testing tailored emailer solutions for rapid development, issue with connection limits using thin, docker.io vs docker-ce and related community flux causing considerable time loss as a result of discarding the possible solution, and in general a lack of toolbelt familiarity have been some of the issues surmounted thus far. 
+
+\subsection{Sam}
+All of my problems come from working with the OpenStax codebase. The codebase is extremely large and has a huge amount of dependencies that make working with it tricky. So my main problem for this project has just been working with and learning the codebase. I have remedied this by doing independent research and looking into the developer notes to gain more insight on the overall project. This has been immensely helpful for learning how our website will eventually works, and has overall been a good learning experience for working with unfamiliar codebases. Beyond this Max has been an incredible resource for learning more about the website, because he had a headstart on the OpenStax website’s codebase. Beyond this another issue I ran into was my familiarity with Ruby on Rails for this project. This was easily remedied by taking some free courses on basic rails programming and good google skills for when I run into other issues. Again this has been a good learning experience and it has been fun learning a new language. 
+
+As a group we had some problems early on in the development cycle involving the dev team of OpenStax and their willingness to work with us. We asked them if they would be willing to help us and give us some sort of technical reference since we were going to be using their codebase as a starting point for our project. The OpenStax team’s response was essentially feel free to use the code but we probably won’t answer your questions. While this was not a major problem it did cause some unnecessary headaches when working on portions of the site, that could have been solved through simple questions.
+
+ A more general problem has to due with how many dependencies the OpenStax codebase has. It is an extremely delicate system and we are currently having issues getting our three portions of the website to play nice together. The three portions being our accounts, exercises, and tutor-server (main server for the site). The three parts work well independently, but right now we are struggling to get them to work together in a way that they don’t break each other. Hopefully we can figure this out within the next week or two and continue with the project. 
+ 
+ \section{Conclusion}
+ To conclude, while we have come across several stumbling blocks, we feel we have made decent progress on the second phase of Project BoxSand. We do wish that we had more progress made towards having a working prototype that our client can interact with but this is not far off in the future. Our main stumbling blocks have been related to adjusting to the style and format of OpenStax and their codebase as well as learning the required languages. While our client was out of contact for a short while, we were able to continue to develop and work towards our end goals through that time with very few hiccups other than simply wanting his input. Our goals for the next few weeks include, getting a working model of the site for the client to interact with, as well as work to solidify accounts, tutor, exercises and tracking. We also hope to get feedback from the client and our cognitive walkthrough on the potential problems of the site from the standpoint of the users of the site. As we continue to work, the issues regarding our familiarity with OpenStax and their codebase and our familiarity with the code language are getting fewer and farther in between. We have however recognized the need to consider how we plan to successful hand the project off to the next development team. As we have taken a decent amount of time to familiarize ourselves with the grits of the project, we want to reduce this for the next development team as much as possible.
+
+
+
+
+\end{document}
