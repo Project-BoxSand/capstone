@@ -10,27 +10,27 @@
 \geometry{textheight=9.5in, textwidth=7in}
 
 % 1. Fill in these details
-\def \CapstoneTeamName{		Project BoxSand}
-\def \CapstoneTeamNumber{		6}
-\def \GroupMemberOne{			Max Moulds}
-\def \GroupMemberTwo{			Sam Morey}
-\def \GroupMemberThree{			Anya Lehman}
-\def \CapstoneProjectName{		Project BoxSand}
-\def \CapstoneSponsorCompany{	Oregon State Physics Department}
-\def \CapstoneSponsorPerson{		Dr. Kenneth Walsh}
+\def \CapstoneTeamName{    Project BoxSand}
+\def \CapstoneTeamNumber{     6}
+\def \GroupMemberOne{         Max Moulds}
+\def \GroupMemberTwo{         Sam Morey}
+\def \GroupMemberThree{       Anya Lehman}
+\def \CapstoneProjectName{    Project BoxSand}
+\def \CapstoneSponsorCompany{ Oregon State Physics Department}
+\def \CapstoneSponsorPerson{     Dr. Kenneth Walsh}
 
 % 2. Uncomment the appropriate line below so that the document type works
-\def \DocType{		Progress Report
-				%Requirements Document
-				%Technology Review
-				%Design Document
-				%Progress Report
-				}
-			
+\def \DocType{    Progress Report
+            %Requirements Document
+            %Technology Review
+            %Design Document
+            %Progress Report
+            }
+         
 \newcommand{\NameSigPair}[1]{\par
-\makebox[2.75in][r]{#1} \hfil 	\makebox[3.25in]{\makebox[2.25in]{\hrulefill} \hfill		\makebox[.75in]{\hrulefill}}
+\makebox[2.75in][r]{#1} \hfil    \makebox[3.25in]{\makebox[2.25in]{\hrulefill} \hfill     \makebox[.75in]{\hrulefill}}
 \par\vspace{-12pt} \textit{\tiny\noindent
-\makebox[2.75in]{} \hfil		\makebox[3.25in]{\makebox[2.25in][r]{Signature} \hfill	\makebox[.75in][r]{Date}}}}
+\makebox[2.75in]{} \hfil      \makebox[3.25in]{\makebox[2.25in][r]{Signature} \hfill   \makebox[.75in][r]{Date}}}}
 % 3. If the document is not to be signed, uncomment the RENEWcommand below
 %\renewcommand{\NameSigPair}[1]{#1}
 
@@ -97,27 +97,41 @@ For this report some past issues have been resolved and some that were resolved 
 
 
 \section{Outstanding Work}
+
+\subsection{Current}
 Accounts needs testing scripts or some sort of verification procedure for Learn@OSU and Canvas. Also, we need to finalize the document explaining it use for next years development team. Tutor server needs to properly configured to allow Redis to accept import data. This has been spotty and is discussed in the Problems section. 
 
 Where deployments are concerned, a final docker image needs to be created along with an updated install/deployment process. It would also be beneficial to update the dependencies since many gems and packages have been updated this year mostly due to security concerns. This may take some time, considering the largest part of the project seems deeply dependent on a specific version of Ruby that is being deprecated. 
 
+\subsection{Completion of Long Standing Issues}
 Some major past issues that have been resolved were with the accounts portion of the project, relating to authorization of apps using Oauth2. These issues have been resolved and documented more extensively in this term which has helped progression in other areas. Another past issue involved Postgres and user accounts, this has also been resolved. Current issues surrounding redis and imports are our focus and have been the source of the most time lost. This issue is complex because it requires all aspects of the site to be functioning for even some of the most basic testing, including js, exercises, accounts, and tutor server itself, and while it does not directly inhibit development on other areas of the site, it makes progress harder. 
 
+\subsection{Documentation and Clerical Time Constraints}
 In addition to ongoing development, time has been committed to wrapping up the project in order to meet the Capstone requirements. The team has dedicated some time to interfacing with a group of students that have self-identified as potential team members for the Capstone project for next year. This has included 3 in-person meetings and multiple online meetings to discuss interdependencies between the two projects and to gradually onboard the new members. Some discussion has been extremely helpful in review of our own progress and problems. We have also begun testing deployments on what will be our final production server environment. 
 
 
 \section{Problems}
+\subsection{Redis}
 One of the biggest problems so far has been importing and Redis. The errors occurring due to this problem are very minimally descriptive and extremely hard to debug, leading to much frustration. Since this aspect is very important to the client and also to the site operation it is very important. The Redis client and server have been tested with other apps and is working which points to some configuration or improper use for our deployment of Redis by the tutor server component. This error may also be related to the time cop issue that is plaguing exercises. That issue is more of a mystery since it is newer and only surfaced this past week. It is believed to be an issue with a gem or an updated syntax that is not reflected in the source yet. 
 
+\subsection{Demo}
 Looking back at Winter quarter's issue list it was noticed that it was about a month for upstream fixes to find their way down to our components. This may not be fast enough for some issues and we may have to revert to older version for a demo for the Expo. 
 
+\subsection{Testing}
 Another issue is lack of full story testing. Since we have had considerable issue connecting the app completely if has been hard to fully test edge features and mainly tracking. This data gathered by tracking is a listed requirement and is still being addressed in our planning for the rest of the development cycle but chances are that it will not meet final deadline and therefore must be considered as an issue beyond lack of testing. A better estimate to when this feature can be fully tested is going to be hard to derive and while work will still continue. the team should address this with the client. 
 
+\subsection{Next Year Plans} 
 One problem that is not really a software or hardware issue but instead a forward looking one involves the proposed team for the next iteration of this Capstone project. That team has expressed strong interest and desire to use socket.io and node exclusively for the implementation of that app. This will further enlarge our dependencies and may cause more problems that it would solve by using node and socket.io. Some research should be done before any commitments are done to ensure the viability of that change of process and to see if there is any immediate issues that would hamper overall site function. 
 
 Since a new team is being readied now, it has given the project a chance to reflect on processes and documentation created in the beginning and discern the effectiveness of that work. It has been noted that updates to that past work will be needed continually in order to keep the work relevant and applicable and this may not be feasible given the availability of the team. Some documentation and processes must be kept up to date. A small portion of current work should be devoted to ensuring past work stays relevant and this portion should be more than is currently allotted. As a comment on this issue, I fear that there is too much to maintain without a more permanent and larger development team. This issue has been discussed with the client and solutions are being identified. 
 
+\subsection{Problems That Need Solutions Before Expo}
 Preparing for Expo has also been a problem. While not a critical one nor one that has help up progress in other areas, it has been a source of angst. For one, it is eight hours of demonstration of something that is not going to be fully functional at that time. It will have a demo version but it will not be what the client will be receiving after this development cycle. This has placed some extra stress on the team to deliver working results over implementing lasting and quality solutions. Since it was recognized early, a plan to minimize this effect has been put in place, but it still had an effect. 
+
+\section{Expo Plan}
+The Expo is a source of much anticipation and a some minor angst, mostly surrounding the duration. Our plan is to have an offline demo available for users to explore the site and some of its functions. This is a work in progress and is more or less our primary focus at the moment.
+
+We have also prepared our poster and rehearsed some talking points for common questions potential users may have. More work needs to be done to improve some of these talking points since during an event of this size it is expected that the excitement and pressure may change our delivery, basically we need to practice. The expectations will be further discussed with our TA one more time before Expo to uncover and missing parts for our presentation. 
 
  \section{Conclusion}
  Progress is continuing. While the project is technically behind the schedule outlayed during milestoning and planning we had also planned a roadmap for this pace of progress. It involved a summer cycle focusing on transition and final completion of any latent issues. We are confident that the majority of client requirements will be met in that timeframe. More work will continue on app feature development but most work will be focused on existing feature support and documentation.
@@ -125,3 +139,4 @@ Preparing for Expo has also been a problem. While not a critical one nor one tha
  
 
 \end{document}
+
